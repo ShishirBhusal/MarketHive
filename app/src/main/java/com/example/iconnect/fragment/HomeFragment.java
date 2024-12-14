@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -25,7 +26,10 @@ import android.widget.TextView;
 import com.cooltechworks.views.shimmer.ShimmerRecyclerView;
 import com.example.iconnect.Adapters.postAdapter;
 import com.example.iconnect.Adapters.storyAdapter;
+import com.example.iconnect.CartActivity;
 import com.example.iconnect.ChatsActivity;
+import com.example.iconnect.CommentActivity;
+import com.example.iconnect.EventActivity;
 import com.example.iconnect.MainActivity;
 import com.example.iconnect.R;
 import com.example.iconnect.models.User;
@@ -59,7 +63,9 @@ RoundedImageView addStory,profile;
 TextView whatOnMind;
 ActivityResultLauncher<String> addStoryImg;
 ProgressDialog dialog;
-ImageView chats;
+
+Button joinEvent;
+ImageView chats,cart;
 
     public HomeFragment() {
 
@@ -85,6 +91,9 @@ ImageView chats;
         storyRV = view.findViewById(R.id.storyRV);
         postRv = view.findViewById(R.id.postRV);
         chats = view.findViewById(R.id.chats);
+        cart = view.findViewById(R.id.cart);
+        joinEvent = view.findViewById(R.id.joinEvent);
+
         ConstraintLayout adminLayout = view.findViewById(R.id.addAnyDiscount);
 
         postRv.showShimmerAdapter();
@@ -95,6 +104,23 @@ ImageView chats;
         dialog.setMessage("Please wait...");
         dialog.setCancelable(false);
         dialog.setCanceledOnTouchOutside(false);
+
+
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), CartActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        joinEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), EventActivity.class);
+                startActivity(intent);
+            }
+        });
 
         whatOnMind.setOnClickListener(new View.OnClickListener() {
             @Override

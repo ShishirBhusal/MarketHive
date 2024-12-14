@@ -40,6 +40,10 @@ import java.util.ArrayList;
 
 public class ProfileFragment extends Fragment {
     RecyclerView profile_friends_RV;
+
+    TextView hide1,hide2;
+
+    View hide0;
     ArrayList<Follow> friendsList;
     ActivityResultLauncher<String> getCoverPhoto, getProfile;
     FirebaseStorage storage;
@@ -77,6 +81,13 @@ public class ProfileFragment extends Fragment {
         TextView followers = view.findViewById(R.id.followers);
         TextView following = view.findViewById(R.id.following);
 
+        hide0 = view.findViewById(R.id.hide0);
+        hide1 = view.findViewById(R.id.hide1);
+        hide2 = view.findViewById(R.id.hide2);
+
+
+
+
 
         database.getReference().child("Users").child(auth.getUid())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
@@ -96,6 +107,12 @@ public class ProfileFragment extends Fragment {
                             profession.setText(user.getProfession());
                             followers.setText(user.getFollowers_count()+"");
                             following.setText(user.getFollowing()+"");
+
+                            if(!user.isAdmin()){
+                                hide0.setVisibility(View.GONE);
+                                hide1.setVisibility(View.GONE);
+                                hide2.setVisibility(View.GONE);
+                            }
                         }
                     }
 

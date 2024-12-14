@@ -50,6 +50,11 @@
             android:name=".MainActivity"
             android:exported="false" />
 
+        <activity android:name=".CartActivity"
+            android:exported="false"/>
+
+        <activity android:name=".EventActivity"
+            android:exported="false"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

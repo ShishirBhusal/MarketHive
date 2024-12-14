@@ -32,7 +32,7 @@
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppins_medium"
                 android:gravity="center_vertical"
-                android:text="Businesses"
+                android:text="Connections"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
