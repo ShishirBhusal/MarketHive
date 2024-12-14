@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MarketHive</string>
+    <string name="home">Home</string>
+    <string name="friends">Friends</string>
+    <string name="add">Add Post</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="name">Genesis</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_story">Create new story</string>
+    <string name="events_collaboration"><![CDATA[Events & Collaboration]]></string>
+</resources>

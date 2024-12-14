@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "567683323908",
+    "project_id": "iconnect-1b66d",
+    "storage_bucket": "iconnect-1b66d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567683323908:android:c11bd9e4f871fd95707d51",
+        "android_client_info": {
+          "package_name": "com.example.iconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567683323908-dljs0e38mpfeet4veuckst1latthqiq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuPlKi3aJFPuIpS7jXo7PMJQ3WeSb6vHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567683323908-dljs0e38mpfeet4veuckst1latthqiq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

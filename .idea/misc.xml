@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/back.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/black_camera.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/btn_background.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/camera.xml" value="0.1775" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/circle_color.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/color_cover.xml" value="0.176" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/cover_img_cover.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/decline_color.xml" value="0.165" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/edittext_background.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/followers_following.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_add.xml" value="0.1945" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_add_navbar.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_audio_call.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_comment.xml" value="0.176" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_friends.xml" value="0.1945" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_home.xml" value="0.1945" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_like.xml" value="0.176" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_like_active.xml" value="0.1775" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_logout_svgrepo_com__1_.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_message.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_notification.xml" value="0.1945" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_photo.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_profile.xml" value="0.1945" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_send.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_share.xml" value="0.176" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/ic_video_call.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/like_comment_background.xml" value="0.1775" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/message_receive_dr.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/message_send_dr.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/name_background.xml" value="0.176" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/online.xml" value="0.165" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/post_background.xml" value="0.176" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/profile_cover.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/profile_fragment_cover.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/shade_for_story.xml" value="0.176" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/story_cover.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/story_name.xml" value="0.176" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/transparent_cover.xml" value="0.1765" />
+        <entry key="..\:/Iconnect/app/src/main/res/drawable/what_on_mind.xml" value="0.1785" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout-v21/fragment_home.xml" value="0.20677083333333332" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/activity_chats.xml" value="0.25" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/activity_comment.xml" value="0.25" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/activity_incoming_call.xml" value="0.20677083333333332" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/activity_log_in.xml" value="0.33" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/activity_main.xml" value="0.20677083333333332" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/activity_message.xml" value="0.25" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/activity_messages.xml" value="0.20677083333333332" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/activity_outgoing_call.xml" value="0.18" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/chats_rv.xml" value="0.33" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/comments_rv.xml" value="0.22" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/fragment_add_post.xml" value="0.25" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/fragment_friends.xml" value="0.22" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/fragment_notification.xml" value="0.20677083333333332" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/fragment_profile_dup.xml" value="0.25" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/friends_rv.xml" value="0.33" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/friends_rv_P.xml" value="0.20677083333333332" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/friends_rv_p.xml" value="0.20677083333333332" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/message_receive.xml" value="0.33" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/message_send.xml" value="0.33" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/notification_rv.xml" value="0.33" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/post_rv.xml" value="0.25" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/post_rv_dup.xml" value="0.25" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/postrv.xml" value="0.20677083333333332" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/shimmer_friends.xml" value="0.20677083333333332" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/shimmer_notification.xml" value="0.20677083333333332" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/shimmer_post.xml" value="0.25" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/shimmer_story.xml" value="0.20677083333333332" />
+        <entry key="..\:/Iconnect/app/src/main/res/layout/story_rv.xml" value="0.25" />
+        <entry key="..\:/Iconnect/app/src/main/res/xml/tabs.xml" value="0.20677083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="jbr-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

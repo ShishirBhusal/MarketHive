@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".OutgoingCallActivity">
+
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="26dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Video call"
+        android:textColor="@color/gray"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/profile"
+        android:layout_width="@dimen/_80mdp"
+        android:layout_height="@dimen/_80mdp"
+        android:layout_marginTop="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type"
+        app:riv_border_color="@color/white"
+        app:riv_border_width="4dp"
+        app:riv_corner_radius="50dp" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Shishir Bhusal"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        app:layout_constraintStart_toStartOf="@+id/profile"
+        app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+
+    <TextView
+        android:id="@+id/profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Android Developer"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+    <TextView
+        android:id="@+id/contacting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:text="Connecting..."
+        android:textColor="@color/pink"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/profession"
+        app:layout_constraintStart_toStartOf="@+id/profession"
+        app:layout_constraintTop_toBottomOf="@+id/profession" />
+
+   
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTintMode="add"
+        android:backgroundTint="#FDFF0008"
+        android:background="@drawable/circle_color"
+        app:layout_constraintBottom_toBottomOf="@+id/decline"
+        app:layout_constraintEnd_toEndOf="@+id/decline"
+        app:layout_constraintStart_toStartOf="@+id/decline"
+        app:layout_constraintTop_toTopOf="@+id/decline" />
+
+    <ImageView
+        android:id="@+id/decline"
+        android:layout_width="@dimen/_23mdp"
+        android:layout_height="@dimen/_28mdp"
+        android:src="@drawable/ic_audio_call"
+        android:tint="@color/white"
+        android:layout_marginTop="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contacting" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app"
+    tools:context=".fragment.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/app_name"
+        android:fillViewport="false"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="239dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="-50dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/chats"
+                android:layout_width="@dimen/_20mdp"
+                android:layout_height="@dimen/_20mdp"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/ic_message"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/color_cover"
+                app:layout_constraintBottom_toBottomOf="@+id/chats"
+                app:layout_constraintEnd_toEndOf="@+id/chats"
+                app:layout_constraintStart_toStartOf="@+id/chats"
+                app:layout_constraintTop_toTopOf="@+id/chats" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#626E68"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/profile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:padding="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_placeholder"
+                app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+                app:layout_constraintEnd_toStartOf="@+id/whatOnMind"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2"
+                app:layout_constraintVertical_bias="0.235"
+                app:riv_corner_radius="50dp"
+                tools:ignore="ImageContrastCheck" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/circle_color"
+                app:layout_constraintBottom_toBottomOf="@+id/profile"
+                app:layout_constraintEnd_toEndOf="@+id/profile"
+                app:layout_constraintStart_toStartOf="@+id/profile"
+                app:layout_constraintTop_toTopOf="@+id/profile" />
+
+            <TextView
+                android:id="@+id/whatOnMind"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/what_on_mind"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="What's on your mind?"
+                android:textColor="#888888"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/profile"
+                app:layout_constraintTop_toTopOf="@+id/profile" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_160mdp"
+                android:layout_marginTop="172dp"
+                android:contentDescription="@string/app_name"
+                android:fillViewport="true"
+                android:paddingLeft="10dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/Events"
+                            android:layout_width="138dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="19dp"
+                            android:visibility="visible">
+
+
+                            <View
+                                android:id="@+id/view5"
+                                android:layout_width="@dimen/_115mdp"
+                                android:layout_height="0dp"
+                                android:background="@drawable/color_cover"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds" />
+
+                            <TextView
+                                android:id="@+id/username"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:text="@string/events_collaboration"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="@+id/view5"
+                                app:layout_constraintTop_toBottomOf="@+id/postImg"
+                                tools:ignore="DuplicateIds" />
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/eventsImg"
+                                android:layout_width="0dp"
+                                android:layout_height="129dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/events"
+                                app:layout_constraintEnd_toEndOf="@+id/view5"
+                                app:layout_constraintStart_toStartOf="@+id/view5"
+                                app:layout_constraintTop_toTopOf="@+id/view5"
+                                app:riv_corner_radius_top_left="19dp"
+                                app:riv_corner_radius_top_right="19dp"
+                                tools:ignore="DuplicateIds,ImageContrastCheck" />
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:background="@drawable/story_cover"
+                                app:layout_constraintBottom_toBottomOf="@+id/eventsImg"
+                                app:layout_constraintEnd_toEndOf="@+id/eventsImg"
+                                app:layout_constraintStart_toStartOf="@+id/eventsImg"
+                                app:layout_constraintTop_toTopOf="@+id/eventsImg"
+                                tools:ignore="DuplicateIds" />
+
+                            <View
+                                android:id="@+id/view33"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:background="@drawable/online"
+                                android:backgroundTint="@color/white"
+                                tools:layout_editor_absoluteX="40dp"
+                                tools:layout_editor_absoluteY="103dp"
+                                tools:ignore="DuplicateIds" />
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="63dp"
+                                android:layout_height="34dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@color/pink"
+                                android:text="Join"
+                                app:layout_constraintBottom_toTopOf="@+id/username"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.506"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/addAnyDiscount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:visibility="visible">
+
+
+                            <View
+                                android:id="@+id/view5"
+                                android:layout_width="@dimen/_115mdp"
+                                android:layout_height="0dp"
+                                android:background="@drawable/color_cover"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <TextView
+                                android:id="@+id/username"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:text="Discount on your product"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="@+id/view5"
+                                app:layout_constraintTop_toBottomOf="@+id/postImg" />
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/postImg"
+                                android:layout_width="0dp"
+                                android:layout_height="129dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/post_placeholder"
+                                app:layout_constraintEnd_toEndOf="@+id/view5"
+                                app:layout_constraintStart_toStartOf="@+id/view5"
+                                app:layout_constraintTop_toTopOf="@+id/view5"
+                                app:riv_corner_radius_top_left="19dp"
+                                app:riv_corner_radius_top_right="19dp"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:background="@drawable/story_cover"
+                                app:layout_constraintBottom_toBottomOf="@+id/postImg"
+                                app:layout_constraintEnd_toEndOf="@+id/postImg"
+                                app:layout_constraintStart_toStartOf="@+id/postImg"
+                                app:layout_constraintTop_toTopOf="@+id/postImg" />
+
+                            <View
+                                android:id="@+id/view33"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:background="@drawable/online"
+                                android:backgroundTint="@color/white"
+                                app:layout_constraintBottom_toBottomOf="@+id/profile"
+                                app:layout_constraintEnd_toEndOf="@+id/profile"
+                                app:layout_constraintStart_toStartOf="@+id/profile"
+                                app:layout_constraintTop_toTopOf="@+id/profile" />
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/profile"
+                                android:layout_width="@dimen/_40mdp"
+                                android:layout_height="@dimen/_40mdp"
+                                android:layout_marginBottom="-5dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_add"
+                                app:layout_constraintBottom_toTopOf="@+id/username"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="@+id/view5"
+                                app:riv_border_color="@color/white"
+                                app:riv_border_width="5dp"
+                                app:riv_corner_radius="25dp" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                            android:id="@+id/storyRV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            app:shimmer_demo_child_count="10"
+                            app:shimmer_demo_layout="@layout/shimmer_story" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+
+            <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                android:id="@+id/postRV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="84dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
+                app:shimmer_demo_child_count="10"
+                app:shimmer_demo_layout="@layout/shimmer_post" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="HOT DEALS OF THE DAY 🔥"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="BROWSE OTHER PRODUCTS!!"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/postRV"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

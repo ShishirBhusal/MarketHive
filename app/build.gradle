@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.iconnect"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude("META-INF/DEPENDENCIES")
+    }
+    namespace 'com.example.iconnect'
+}
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.iammert:ReadableBottomBar:0.2'
+    implementation 'com.github.MrNouri:DynamicSizes:1.0'
+    implementation platform('com.google.firebase:firebase-bom:33.6.0')
+    implementation 'com.google.firebase:firebase-messaging:24.1.0'  // Make sure to use the latest version
+
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.github.marlonlom:timeago:4.0.3'
+    implementation 'com.github.OMARIHAMZA:StoryView:1.0.2-alpha'
+    implementation 'com.github.3llomi:CircularStatusView:V1.0.2'
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
+    implementation ('org.jitsi.react:jitsi-meet-sdk:10.3.0') { transitive = true }
+    implementation "com.github.pgreze:android-reactions:1.6"
+    implementation("com.google.auth:google-auth-library-oauth2-http:1.3.0")
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3" // or the latest stable version
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3" // or the latest stable version
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7" // or the latest stable version
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+
+
+}
+apply plugin: 'com.google.gms.google-services'
